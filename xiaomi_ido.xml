@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name = "ubpi"
+            fetch = "https://github.com/Ubports-ido"
+            revision="cm-14.1" 
+    />
+    <remote name="fred" 
+            fetch="https://github.com/fredldotme" 
+    />
+    <project path="device/xiaomi/ido" name="android_device_xiaomi_ido" remote="ubpi" revision="cm-14.1" />
+    <project path="external/sony/boringssl-compat" name="android_external_sony_boringssl-compat" remote="ubpi" revision="cm-14.1" />
+    <project path="kernel/xiaomi/msm8916" name="android_kernel_xiaomi_msm8916" remote="ubpi" revision="cm-14.1" />
+    <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="ubpi" revision="cm-14.1" />
+    <project path="external/gpg" name="android_external_gpg" remote="ubpi" revision="halium-7.1" />
+
+    <remove-project path="external/toybox" name="android_external_toybox" />
+    <remove-project path="system/core" name="Halium/android_system_core" />
+    <project path="external/toybox" name="android_external_toybox" revision="halium-7.1" remote="fred" />
+    <project path="system/core" name="Halium/android_system_core" groups="pdk" remote="hal" revision="halium-7.1-adbroot" />
+</manifest>
