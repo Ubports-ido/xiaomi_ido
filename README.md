@@ -1,2 +1,2 @@
-# Manifestation file for Redmi 3 
-A manifestation to build Ubuntu touch
+# Manifest file for Redmi 3 
+A manifest to build Ubuntu touch for Redmi 3
